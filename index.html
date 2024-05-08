@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPRINT_SAN JUNIPERO</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="video-erwachen">
+      <div class="video-wrap">
+        <video id="myVideo" preload="auto">
+          <source src="videos/mobile_SJ_low.mp4" type="video/mp4" />
+        </video>
+    <div class="TCKR">
+      <div class="circle">
+      </div>
+      <button id="playButton" onclick="hideButton()">CLICK TO DIE</button>
+    </div>
+  </div>
+
+
+    <script>
+    function hideButton() {
+       var playButton = 
+          document.getElementById("playButton"); 
+       var video = document.getElementById("myVideo");
+       playButton.classList.add("hide");
+       video.play();
+    }  
+    </script>
+  </body>
+</html>
